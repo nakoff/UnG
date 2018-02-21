@@ -1,0 +1,184 @@
+<Maratis version="3.0">
+
+<Level>
+
+	<properties currentScene="0" />
+
+	<Scene name="next">
+
+		<script file="../scripts/star.lua" />
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+		<Light name="Light0">
+			<active value="true" />
+			<transform 
+				position="0.000000 4.501209 41.744122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="2000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Light name="Light1">
+			<active value="true" />
+			<transform 
+				position="14.318792 -4.650403 25.232330"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="2000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Camera name="Camera0">
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 56.326408"
+				rotation="0.000000 0.000000 -89.999825"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				ortho="true"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000" />
+		</Camera>
+		<Sound name="s1" file="../sounds/ex1.wav">
+			<active value="true" />
+			<transform 
+				position="0.000000 4.501209 41.744122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s2" file="../sounds/ep.wav">
+			<active value="true" />
+			<transform 
+				position="0.000000 4.501209 41.744122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Entity name="star1" file="../meshs/star/star.mesh">
+			<BoundingBox min="-0.706506 -1.771374 -1.806392" max="0.706506 1.802056 1.756856" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="3.508024 8.110812 0.590944"
+				rotation="89.995178 82.059837 89.996857"
+				scale="2.000000 2.000000 2.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="star2" file="../meshs/star/star.mesh">
+			<BoundingBox min="-0.706506 -1.771374 -1.806392" max="0.706506 1.802056 1.756856" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="3.508024 -0.773967 0.582954"
+				rotation="-0.001023 -82.448906 179.999878"
+				scale="2.000000 2.000000 2.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="star3" file="../meshs/star/star.mesh">
+			<BoundingBox min="-0.706506 -1.771374 -1.806392" max="0.706506 1.802056 1.756856" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="3.508024 -9.801171 0.590944"
+				rotation="179.998825 -89.999992 0.000000"
+				scale="2.000000 2.000000 2.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="Entity0" file="../meshs/backgr/bgr.mesh">
+			<BoundingBox min="0.183667 -10.645576 -7.924562" max="0.183668 10.279033 6.952452" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="10.811472 1.331449 -0.290369"
+				rotation="0.000000 -90.000000 0.000000"
+				scale="1.000000 6.946823 10.069429" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="fx1" file="../meshs/AnimTextures/expgen_G1.mesh">
+			<BoundingBox min="-5.000000 -0.000003 -5.000000" max="5.000000 0.000003 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="14.318792 -4.650403 25.232330"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="fx2" file="../meshs/AnimTextures/Pillu_G1.mesh">
+			<BoundingBox min="-5.000000 -0.000003 -5.000000" max="5.000000 0.000003 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="14.318792 -4.650403 25.232330"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Text name="ScoreT" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="15.963948 -0.057611 0.590944"
+				rotation="180.000000 0.000002 -90.000000"
+				scale="1.202353 0.683156 1.000000" />
+			<properties 
+				size="5.000000"
+				align="Center"
+				color="1.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[Text]]>
+			</textData>
+		</Text>
+		<Text name="nextT" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-13.582509 -0.057611 0.590944"
+				rotation="180.000000 0.000002 -90.000000"
+				scale="1.202353 0.683156 1.000000" />
+			<properties 
+				size="4.000000"
+				align="Center"
+				color="1.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[Text]]>
+			</textData>
+		</Text>
+
+	</Scene>
+
+</Level>
+
+</Maratis>

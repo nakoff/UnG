@@ -1,0 +1,528 @@
+<Maratis version="3.0">
+
+<Level>
+
+	<properties currentScene="0" />
+
+	<Scene name="menu">
+
+		<script file="../scripts/levels.lua" />
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+		<Light name="Light0">
+			<active value="true" />
+			<transform 
+				position="5.267210 113.861412 70.775917"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="2000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Light name="Light1">
+			<active value="true" />
+			<transform 
+				position="4.757199 -73.677574 78.703545"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="2000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Camera name="cam">
+			<active value="true" />
+			<transform 
+				position="5.276452 18.574699 130.322327"
+				rotation="0.000000 0.000000 -90.000000"
+				scale="0.914196 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				ortho="true"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000" />
+		</Camera>
+		<Sound name="s1" file="../sounds/l1.ogg">
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s2" file="../sounds/l2.ogg">
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s3" file="../sounds/l3.ogg">
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s4" file="../sounds/l4.ogg">
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s7" file="../sounds/click.ogg">
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s5" file="../sounds/l5.ogg">
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s6" file="../sounds/l6.ogg">
+			<active value="true" />
+			<transform 
+				position="19.979765 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Sound name="s8" file="../sounds/click2.ogg">
+			<active value="true" />
+			<transform 
+				position="19.979765 17.588184 24.442436"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Entity name="m2" file="../meshs/expl/ex.mesh">
+			<BoundingBox min="-0.035785 -2.305541 -1.790519" max="-0.035785 2.045828 2.560849" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="20.181271 17.588184 8.885658"
+				rotation="-17.000818 90.000000 0.000000"
+				scale="0.710520 3.703313 4.335192" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="m1" file="../meshs/expl/ex.mesh">
+			<BoundingBox min="-0.035785 -2.305541 -1.790519" max="-0.035785 2.045828 2.560849" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="20.181271 45.133568 8.885658"
+				rotation="-0.000000 90.000000 0.000000"
+				scale="0.710520 3.703313 4.335192" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="m3" file="../meshs/expl/ex.mesh">
+			<BoundingBox min="-0.035785 -2.305541 -1.790519" max="-0.035785 2.045828 2.560849" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="19.383226 -11.724648 8.885658"
+				rotation="-79.567230 90.000000 0.000000"
+				scale="0.710520 3.703313 4.335192" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="m6" file="../meshs/expl/ex.mesh">
+			<BoundingBox min="-0.035785 -2.305541 -1.790519" max="-0.035785 2.045828 2.560849" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-4.658123 -9.838602 8.885658"
+				rotation="-90.110283 90.000000 0.000000"
+				scale="0.710520 3.703313 4.335192" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="m5" file="../meshs/expl/ex.mesh">
+			<BoundingBox min="-0.035785 -2.305541 -1.790519" max="-0.035785 2.045828 2.560849" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-6.800934 17.847662 8.885658"
+				rotation="35.953102 90.000000 0.000000"
+				scale="0.710520 3.703313 4.335192" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="m4" file="../meshs/expl/ex.mesh">
+			<BoundingBox min="-0.035785 -2.305541 -1.790519" max="-0.035785 2.045828 2.560849" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-8.598273 44.001011 8.885658"
+				rotation="-32.590004 90.000000 0.000000"
+				scale="0.710520 3.703313 4.335192" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="Entity0" file="../meshs/bgrWite/bgrWite.mesh">
+			<BoundingBox min="0.183658 -98.992310 -55.128120" max="0.183677 98.625763 55.028671" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="12.093944 17.588184 8.124405"
+				rotation="-0.000000 90.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="closed1" file="../meshs/closed/closed.mesh">
+			<BoundingBox min="-1.356777 -1.584495 -2.506601" max="-1.356776 2.088311 2.791300" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="21.186468 17.714922 12.136614"
+				rotation="-179.999435 -87.752663 -0.000572"
+				scale="1.000000 2.534755 1.982406" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="closed2" file="../meshs/closed/closed.mesh">
+			<BoundingBox min="-1.356777 -1.584495 -2.506601" max="-1.356776 2.088311 2.791300" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="21.186468 -9.642546 12.136614"
+				rotation="-179.999435 -87.752663 -0.000572"
+				scale="1.000000 2.534755 1.982406" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="closed5" file="../meshs/closed/closed.mesh">
+			<BoundingBox min="-1.356777 -1.584495 -2.506601" max="-1.356776 2.088311 2.791300" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-3.580156 -7.865417 12.136614"
+				rotation="-179.999435 -87.752663 -0.000572"
+				scale="1.000000 2.534755 1.982406" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="closed4" file="../meshs/closed/closed.mesh">
+			<BoundingBox min="-1.356777 -1.584495 -2.506601" max="-1.356776 2.088311 2.791300" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-4.415440 16.929176 12.136614"
+				rotation="-179.999435 -87.752663 -0.000572"
+				scale="1.000000 2.534755 1.982406" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="closed3" file="../meshs/closed/closed.mesh">
+			<BoundingBox min="-1.356777 -1.584495 -2.506601" max="-1.356776 2.088311 2.791300" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-4.653387 43.982426 12.136614"
+				rotation="-179.999435 -87.752663 -0.000572"
+				scale="1.000000 2.534755 1.982406" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="fx1" file="../meshs/AnimTextures/expgen_G1.mesh">
+			<BoundingBox min="-5.000000 -0.000003 -5.000000" max="5.000000 0.000003 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="20.181271 45.133568 60.903961"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Entity name="fx2" file="../meshs/AnimTextures/Pillu_G1.mesh">
+			<BoundingBox min="-5.000000 -0.000003 -5.000000" max="5.000000 0.000003 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="20.181271 45.133568 60.903961"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Text name="l1" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="19.323063 43.542198 10.425812"
+				rotation="-180.000000 -0.000002 -90.000000"
+				scale="0.306971 0.296662 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Center"
+				color="0.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[1]]>
+			</textData>
+		</Text>
+		<Text name="l2" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="18.538910 16.986238 10.425812"
+				rotation="-180.000000 -0.000002 -90.000000"
+				scale="0.306971 0.296662 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Center"
+				color="0.000000 0.800000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[2]]>
+			</textData>
+		</Text>
+		<Text name="l3" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="18.447464 -10.095001 10.619678"
+				rotation="-180.000000 -0.000002 -90.000000"
+				scale="0.306971 0.296662 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Center"
+				color="0.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[3]]>
+			</textData>
+		</Text>
+		<Text name="l6" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="-6.893859 -8.526255 10.425812"
+				rotation="-180.000000 -0.000002 -90.000000"
+				scale="0.306971 0.296662 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Center"
+				color="0.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[6]]>
+			</textData>
+		</Text>
+		<Text name="l5" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="-7.545257 15.995789 10.425812"
+				rotation="-180.000000 -0.000002 -90.000000"
+				scale="0.306971 0.296662 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Center"
+				color="0.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[5]]>
+			</textData>
+		</Text>
+		<Text name="l4" file="../fonts/Gentium102/Lombardina Initial One.ttf">
+			<active value="true" />
+			<transform 
+				position="-7.639355 43.106297 10.425812"
+				rotation="-180.000000 -0.000002 -90.000000"
+				scale="0.306971 0.296662 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Center"
+				color="0.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[4]]>
+			</textData>
+		</Text>
+		<Text name="Text0" file="../fonts/Gentium102/GenR102.TTF.font">
+			<active value="true" />
+			<transform 
+				position="5.043837 18.687702 8.600630"
+				rotation="180.000000 0.000002 -67.205574"
+				scale="1.196214 2.042593 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.600000 0.400000 0.900000 1.000000" />
+			<textData>
+				<![CDATA[Uninvited Guests]]>
+			</textData>
+		</Text>
+		<Text name="Text1" file="../fonts/Gentium102/GenR102.TTF.font">
+			<active value="true" />
+			<transform 
+				position="20.784899 16.754845 11.573766"
+				rotation="180.000000 0.000002 -67.205574"
+				scale="1.196214 2.042593 1.000000" />
+			<properties 
+				size="2.000000"
+				align="Center"
+				color="1.600000 5.400000 0.000000 1.000000" />
+			<textData>
+				<![CDATA[COPY lvl 1]]>
+			</textData>
+		</Text>
+		<Text name="Text2" file="../fonts/Gentium102/GenR102.TTF.font">
+			<active value="true" />
+			<transform 
+				position="-6.111608 43.771080 11.573766"
+				rotation="180.000000 0.000002 -67.205574"
+				scale="1.196214 2.042593 1.000000" />
+			<properties 
+				size="2.000000"
+				align="Center"
+				color="1.500000 5.400000 0.000000 1.000000" />
+			<textData>
+				<![CDATA[COPY lvl 2]]>
+			</textData>
+		</Text>
+		<Text name="Text3" file="../fonts/Gentium102/GenR102.TTF.font">
+			<active value="true" />
+			<transform 
+				position="-6.111608 -8.611788 11.573766"
+				rotation="180.000000 0.000002 -67.205574"
+				scale="1.196214 2.042593 1.000000" />
+			<properties 
+				size="2.000000"
+				align="Center"
+				color="1.500000 5.400000 0.000000 1.000000" />
+			<textData>
+				<![CDATA[COPY lvl 3]]>
+			</textData>
+		</Text>
+
+	</Scene>
+
+</Level>
+
+</Maratis>

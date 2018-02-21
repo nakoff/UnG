@@ -1,0 +1,401 @@
+<Maratis version="3.0">
+
+<Level>
+
+	<properties currentScene="0" />
+
+	<Scene name="menu">
+
+		<script file="../scripts/menu.lua" />
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+		<Camera name="cam">
+			<active value="true" />
+			<transform 
+				position="5.276452 18.574699 130.322327"
+				rotation="0.000000 0.000000 -90.000000"
+				scale="0.914196 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				ortho="true"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000" />
+		</Camera>
+		<Sound name="s1" file="../sounds/ep.wav">
+			<active value="true" />
+			<transform 
+				position="12.137907 18.574699 21.105589"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="false"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Entity name="menu1" file="../meshs/box.mesh">
+			<BoundingBox min="-5.000000 -5.000000 -5.000000" max="5.000000 5.000000 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="21.908497 18.574699 8.885665"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="0.789394 4.073856 1.000000" />
+			<properties 
+				invisible="true" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="menu2" file="../meshs/box.mesh">
+			<BoundingBox min="-5.000000 -5.000000 -5.000000" max="5.000000 5.000000 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="4.471218 18.574699 8.885665"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="0.795347 3.092696 1.000000" />
+			<properties 
+				invisible="true" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="menu3" file="../meshs/box.mesh">
+			<BoundingBox min="-5.000000 -5.000000 -5.000000" max="5.000000 5.000000 5.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-11.719402 18.574699 8.885665"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="0.795347 2.045728 1.000000" />
+			<properties 
+				invisible="true" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Text name="menut1" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				parent="menu1"
+				position="-3.748669 0.000000 -0.000026"
+				rotation="-159.677292 0.000005 -89.999954"
+				scale="0.224406 1.237667 1.035832" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.800000 1.000000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[Play game]]>
+			</textData>
+		</Text>
+		<Text name="menut2" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				parent="menu2"
+				position="-4.470000 0.000000 -0.000001"
+				rotation="-180.000000 -0.000002 -89.999954"
+				scale="0.295598 1.257313 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.800000 1.000000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[Credits]]>
+			</textData>
+		</Text>
+		<Text name="menut3" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				parent="menu3"
+				position="-4.103775 -0.000000 0.000000"
+				rotation="180.000000 0.000002 -89.999977"
+				scale="0.446881 1.257313 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.800000 1.000000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[Exit]]>
+			</textData>
+		</Text>
+
+	</Scene>
+	<Scene name="credits">
+
+		<script file="../scripts/credits.lua" />
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+		<Light name="lg1">
+			<active value="true" />
+			<transform 
+				position="-20.461205 68.453041 86.974632"
+				rotation="-30.550135 0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="3000.000000"
+				color="1.000000 0.500000 1.000000"
+				intensity="0.500000"
+				spotAngle="45.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Light name="lg2">
+			<active value="true" />
+			<transform 
+				position="-20.897278 -82.663918 85.923401"
+				rotation="30.400888 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="3000.000000"
+				color="0.500000 1.000000 1.000000"
+				intensity="0.500000"
+				spotAngle="45.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Light name="lg4">
+			<active value="true" />
+			<transform 
+				position="-142.876694 -18.187004 86.974632"
+				rotation="1.855986 -37.587982 0.069317"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="3000.000000"
+				color="1.000000 1.000000 0.500000"
+				intensity="0.500000"
+				spotAngle="45.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Light name="Light0">
+			<active value="true" />
+			<transform 
+				position="-35.932545 -24.162510 145.309174"
+				rotation="6.531215 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="3000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="0.500000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Camera name="cam">
+			<active value="true" />
+			<transform 
+				position="-33.573460 -12.123225 124.278053"
+				rotation="0.000000 0.000000 -90.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000" />
+		</Camera>
+		<Sound name="Sound0" file="../sounds/credits.ogg">
+			<active value="true" />
+			<transform 
+				position="-34.045322 1.194210 8.885665"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				loop="true"
+				pitch="1.000000"
+				gain="50.000000"
+				radius="10.000000"
+				rolloff="1.000000"
+				relative="false" />
+		</Sound>
+		<Entity name="Entity0" file="../meshs/bgrWite/bgrWite.mesh">
+			<BoundingBox min="0.183658 -98.992310 -55.128120" max="0.183677 98.625763 55.028671" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="-22.711269 0.566613 8.885665"
+				rotation="-0.000000 90.000000 0.000000"
+				scale="1.000000 1.754679 3.449811" />
+			<properties 
+				invisible="false" />
+		</Entity>
+		<Text name="Text0" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="4.471218 0.566613 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.500000 0.500000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[authot:]]>
+			</textData>
+		</Text>
+		<Text name="Text1" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-7.798235 1.194210 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="12.000000"
+				align="Center"
+				color="0.500000 0.800000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[ant0N]]>
+			</textData>
+		</Text>
+		<Text name="Text2" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-22.711269 0.566613 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.500000 0.500000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[engine:]]>
+			</textData>
+		</Text>
+		<Text name="Text3" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-34.045322 1.194210 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="12.000000"
+				align="Center"
+				color="0.500000 0.800000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[Maratis3D]]>
+			</textData>
+		</Text>
+		<Text name="Text4" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-42.582184 0.566613 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.400000 0.500000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[maratis3d.org]]>
+			</textData>
+		</Text>
+		<Text name="Text5" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-55.715790 0.566613 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.500000 0.500000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[acknowledgements:]]>
+			</textData>
+		</Text>
+		<Text name="Text6" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-68.641289 33.215645 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="12.000000"
+				align="Center"
+				color="0.500000 0.800000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[anael]]>
+			</textData>
+		</Text>
+		<Text name="Text7" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-80.980247 44.989140 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="12.000000"
+				align="Center"
+				color="0.500000 0.800000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[Vegas]]>
+			</textData>
+		</Text>
+		<Text name="Text8" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-67.746613 -19.359241 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.500000 0.800000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[for the engine]]>
+			</textData>
+		</Text>
+		<Text name="Text9" file="../fonts/Gentium102/Beast Impact.ttf">
+			<active value="true" />
+			<transform 
+				position="-80.803856 -25.570885 8.885665"
+				rotation="-0.000002 180.000000 89.549568"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="8.000000"
+				align="Center"
+				color="0.500000 0.800000 0.500000 1.000000" />
+			<textData>
+				<![CDATA[for animation explosions]]>
+			</textData>
+		</Text>
+
+	</Scene>
+
+</Level>
+
+</Maratis>
